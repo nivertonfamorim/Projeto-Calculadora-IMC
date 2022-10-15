@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="calc-container" class="" >
+        <h2>Calculadora IMC</h2>
+        <form id="imc-form" action="">
+          <div class="form-inputs">
+            <div class="form-control">
+              <label for="height">Altura:</label>
+              <div class="icone-input">
+                <span class="icone"
+                  ><img src="img/ruler-minimal-square.svg" alt=""
+                /></span>
+                <input
+                  type="text"
+                  name="height"
+                  id="height"
+                  placeholder="Digte sua altura (ex: 1,75)"
+                />
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label for="weight">Peso:</label>
+
+              <div class="icone-input">
+                <span class="icone"
+                  ><img src="img/ruler-minimal-square.svg" alt=""
+                /></span>
+                <input
+                  type="text"
+                  name="weight"
+                  id="weight"
+                  placeholder="Digte seu  peso (ex: 75,5)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="action-control">
+            <button class="btn" id="calc-btn">Calcular</button>
+          </div>
+        </form>
+        <footer class="footer">
+          <a href="https://www.uol.com.br/vivabem/faq/imc-como-calcular-tabela-dicas-como-melhorar-e-mais.htm" target="_blank">Tira todas as suas dúvidas sobre imc aqui</a>
+          <a href="https://github.com/nivertonfamorim" target="_blank">Desenvolvido por @niverton.amorim</a>
+        </footer>
+      </div>
+      
+
+      <div id="result-container" class="hide">
+        <p id="imc-number">Seu IMC: <span></span></p>
+        <p id="imc-info">Situação atual: <span></span></p>
+        <h3>Tabela de IMC</h3>
+        <div id="imc-table">
+          <div class="table-header">
+            <h4>IMC</h4>
+            <h4>Classificação</h4>
+            <h4>Grau de obesidade</h4>
+          </div>
+        </div>
+        <button class="btn" id="back">Voltar</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
